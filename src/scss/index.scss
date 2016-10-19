@@ -1,0 +1,431 @@
+/*clear common style*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, img { margin:0; padding:0; }
+img { border:none; }
+img{display: block;}
+ul, ol { list-style:none; }
+body {font-family:"Microsoft YaHei","Arial"; font-size:12px;}
+a {text-decoration:none; color:#000;}
+i{font-style:normal;}
+
+
+
+$fontsize:640px/10;
+@function px2rem($px){
+  @return $px/$fontsize + rem;
+}
+//style
+%cSize {
+  width:100%;
+  height:100%;
+}
+%cloud{
+  background:url(../images/top1.png) no-repeat;
+  background-size: cover;
+  width:100%;
+  height:9%;
+}
+html,body{
+  @extend %cSize;
+}
+.intro{
+  height:6.25%;
+  max-width:px2rem(640px);
+  .title{
+    width:100%;
+    height:6.25%;
+    background:#333;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:2;
+    font-size:px2rem(32px);
+    line-height:px2rem(70px);
+    color:#fff;
+    text-align: center;
+  }
+}
+.swiper-container{
+  max-width:px2rem(640px);
+  height:93.75%;
+  margin:0 auto;
+  .music{
+    width:px2rem(50px);
+    height:px2rem(50px);
+    background:url(../images/music4.png) no-repeat;
+    position:absolute;
+    right:px2rem(15px);
+    top:px2rem(20px);
+    z-index:3;
+    background-size:cover;
+    animation:cricle 1s linear infinite;
+  }
+  .musicCtro{
+    width:px2rem(40px);
+    height:px2rem(40px);
+    background:url(../images/music3.png) no-repeat;
+    position:absolute;
+    right:0;
+    top:px2rem(10px);
+    z-index:3;
+    background-size:cover;
+    transform:rotate(130deg);
+  }
+  .swiper-wrapper{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    @for $i from 1 to 7{
+      .page-#{$i}{
+        background:url(../images/back1.png) no-repeat;
+        background-size:cover;
+      }
+    }
+    .swiper-slide{
+      @extend %cSize;
+      &:after{
+        content: "";
+        position:absolute;
+        bottom:px2rem(20px);
+        left:50%;
+        width:px2rem(25px);
+        height:px2rem(25px);
+        background:url(../images/arrow.png) no-repeat;
+        background-size: px2rem(200px) px2rem(25px);
+        z-index:3;
+        animation:upDown linear 1s infinite;
+      }
+    }
+    .page-1{
+      .cloud{
+        @extend %cloud;
+
+      }
+      .logo{
+        width:31.25%;
+        height:6.39%;
+        margin-left:9.375%;
+        img{
+          @extend %cSize;
+        }
+      }
+      .team{
+        width:76.5625%;
+        height:53%;
+        margin:3.759% auto;
+        img{
+          @extend %cSize;
+        }
+      }
+      .house{
+        position:absolute;
+        bottom:0;
+        height:30%;
+        img{
+          @extend %cSize;
+        }
+      }
+    }
+    .page-2{
+      @extend %cSize;
+      .cloud{
+        @extend %cloud;
+      }
+      .face{
+        width:38.12%;
+        height:22.92%;
+        background:url(../images/face.png) no-repeat;
+        background-size: cover;
+        margin:0 auto;
+        margin-top:10%;
+      }
+      .content{
+        img{
+          width: 83.043%;
+          height: 50.5%;
+          margin: 0 auto;
+          margin-top:10%;
+        }
+      }
+      .intro{
+        margin-top:10%;
+        background:url(../images/page2-line.png) no-repeat;
+        background-size:cover;
+        width:94.0625%;
+        height:27.068%;
+        position:absolute;
+        bottom:30%;
+        left:2%;
+      }
+      .detail{
+        width:100%;
+        height:9.625%;
+        margin-top:20%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        img{
+          height:100%;
+          width:34.62%;
+        }
+      }
+    }
+    .page-3{
+      .cloud{
+        @extend %cloud;
+      }
+      .intro{
+        width: 96%;
+        height: 18%;
+        margin-left:2%;
+        margin-top:5%;
+        background:url(../images/page3-intro.png) no-repeat;
+        background-size:cover;
+      }
+      .phone {
+        width: 100%;
+        height: 75%;
+        background: url(../images/phone.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .show{
+        position:relative;
+        width:100%;
+        height:75%;
+        bottom:5%;
+        p:nth-of-type(1){
+          width:58%;
+          height:5%;
+          background:url(../images/page3-1.png) no-repeat;
+          background-size:cover;
+          position:absolute;
+          left:3%;
+          bottom:70%;
+        }
+        p:nth-of-type(2){
+          width:58%;
+          height:6%;
+          background:url(../images/page3-2.png) no-repeat;
+          background-size:cover;
+          position:absolute;
+          left:8%;
+          bottom:58%;
+        }
+        p:nth-of-type(3){
+          width:63%;
+          height:6%;
+          background:url(../images/page3-3.png) no-repeat;
+          background-size:cover;
+          position:absolute;
+          left:3%;
+          bottom:46%;
+        }
+        p:nth-of-type(4){
+          width: 65%;
+          height: 7%;
+          background: url(../images/page3-4.png) no-repeat;
+          background-size: cover;
+          position: absolute;
+          left: 8%;
+          bottom: 33%;
+        }
+        p:nth-of-type(5){
+          width: 63%;
+          height: 5%;
+          background: url(../images/page3-5.png) no-repeat;
+          background-size: cover;
+          position: absolute;
+          left: 3%;
+          bottom: 22%;
+        }
+        p:nth-of-type(6){
+          width: 62%;
+          height: 9%;
+          background: url(../images/page3-6.png) no-repeat;
+          background-size: cover;
+          position: absolute;
+          left: 8%;
+          bottom: 6%;
+        }
+      }
+    }
+    .page-4{
+      .cloud{
+        @extend %cloud;
+      }
+      .if{
+        width: 58%;
+        height: 7%;
+        background: url(../images/page4-if.png) no-repeat;
+        background-size: cover;
+        margin-left: 18%;
+        margin-top:8%;
+      }
+      .man{
+        width:44%;
+        height:70%;
+        margin-left:24%;
+        background:url(../images/page4-man.png) no-repeat;
+        background-size:cover;
+        position:absolute;
+        bottom:3%;
+      }
+      p:nth-of-type(1){
+        width: 48%;
+        height: 3%;
+        background: url(../images/page4-success.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 2%;
+        top: 29%;
+      }
+      p:nth-of-type(2){
+        width: 39%;
+        height: 3%;
+        background: url(../images/page4-source.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+      }
+      p:nth-of-type(3){
+        width: 43%;
+        height: 3%;
+        background: url(../images/page4-ability.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 4%;
+        top: 64%;
+      }
+      p:nth-of-type(4){
+        width: 40%;
+        height: 3%;
+        background: url(../images/page4-innovate.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 2%;
+        top: 83%;
+      }
+      p:nth-of-type(5){
+        width: 27%;
+        height: 7%;
+        background: url(../images/page4-love.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 10%;
+        top: 49%;
+      }
+      p:nth-of-type(6){
+        width: 37%;
+        height: 3%;
+        background: url(../images/page4-passion.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 6%;
+        top: 61%;
+      }
+    }
+    .page-5{
+      .cloud{
+        @extend %cloud;
+      }
+      .go{
+        width:84%;
+        height:14%;
+        margin-left:8%;
+        margin-top:10%;
+        background:url(../images/page5-go.png) no-repeat;
+        background-size:cover;
+      }
+      .message{
+        width:84%;
+        height:auto;
+        margin:0 auto;
+        margin-top:5%;
+        p{
+          width:100%;
+          height:5%;
+          margin-bottom:3%;
+          background:#fff;
+          input{
+            width:100%;
+            height:px2rem(50px);
+            font-size:px2rem(32px);
+            background:#fff;
+            border:none;
+            outline:none;
+            text-indent:3%;
+            line-height:25px;
+          }
+        }
+        p:nth-of-type(3){
+          display:flex;
+          flex-direction:row;
+          align-items: center;
+          font-size:px2rem(32px);
+          line-height:px2rem(54px);
+          color:#333;
+          input{
+            width:20%;
+            height:px2rem(36px);
+          }
+        }
+        p:last-of-type{
+          background:blue;
+          input{
+            background:blue;
+            color:#fff;
+          }
+        }
+
+      }
+      .bottom{
+        width:100%;
+        height:30%;
+        background:url(../images/page5-bottom.png) no-repeat;
+        background-size:cover;
+        position: absolute;
+        bottom:0;
+
+      }
+    }
+
+  }
+
+}
+ @keyframes upDown {
+   from{
+     bottom:px2rem(20px);
+     opacity:1;
+   }
+   to{
+     bottom:px2rem(40px);
+     opacity:0;
+   }
+ }
+ @keyframes cricle {
+   from{
+     transform:rotate(0deg);
+   }
+   to{
+     transform:rotate(360deg);
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+

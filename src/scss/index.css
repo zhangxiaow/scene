@@ -1,0 +1,348 @@
+/*clear common style*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, img {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: none; }
+
+img {
+  display: block; }
+
+ul, ol {
+  list-style: none; }
+
+body {
+  font-family: "Microsoft YaHei","Arial";
+  font-size: 12px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+i {
+  font-style: normal; }
+
+html, body, .swiper-container .swiper-wrapper .swiper-slide, .swiper-container .swiper-wrapper .page-1 .logo img, .swiper-container .swiper-wrapper .page-1 .team img, .swiper-container .swiper-wrapper .page-1 .house img, .swiper-container .swiper-wrapper .page-2 {
+  width: 100%;
+  height: 100%; }
+
+.swiper-container .swiper-wrapper .page-1 .cloud, .swiper-container .swiper-wrapper .page-2 .cloud, .swiper-container .swiper-wrapper .page-3 .cloud, .swiper-container .swiper-wrapper .page-4 .cloud, .swiper-container .swiper-wrapper .page-5 .cloud {
+  background: url(../images/top1.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 9%; }
+
+.intro {
+  height: 6.25%;
+  max-width: 10rem; }
+  .intro .title {
+    width: 100%;
+    height: 6.25%;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 0.5rem;
+    line-height: 1.09375rem;
+    color: #fff;
+    text-align: center; }
+
+.swiper-container {
+  max-width: 10rem;
+  height: 93.75%;
+  margin: 0 auto; }
+  .swiper-container .music {
+    width: 0.78125rem;
+    height: 0.78125rem;
+    background: url(../images/music4.png) no-repeat;
+    position: absolute;
+    right: 0.23438rem;
+    top: 0.3125rem;
+    z-index: 3;
+    background-size: cover;
+    animation: cricle 1s linear infinite; }
+  .swiper-container .musicCtro {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: url(../images/music3.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0.15625rem;
+    z-index: 3;
+    background-size: cover;
+    transform: rotate(130deg); }
+  .swiper-container .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .swiper-container .swiper-wrapper .page-1 {
+      background: url(../images/back1.png) no-repeat;
+      background-size: cover; }
+    .swiper-container .swiper-wrapper .page-2 {
+      background: url(../images/back1.png) no-repeat;
+      background-size: cover; }
+    .swiper-container .swiper-wrapper .page-3 {
+      background: url(../images/back1.png) no-repeat;
+      background-size: cover; }
+    .swiper-container .swiper-wrapper .page-4 {
+      background: url(../images/back1.png) no-repeat;
+      background-size: cover; }
+    .swiper-container .swiper-wrapper .page-5 {
+      background: url(../images/back1.png) no-repeat;
+      background-size: cover; }
+    .swiper-container .swiper-wrapper .page-6 {
+      background: url(../images/back1.png) no-repeat;
+      background-size: cover; }
+    .swiper-container .swiper-wrapper .swiper-slide:after {
+      content: "";
+      position: absolute;
+      bottom: 0.3125rem;
+      left: 50%;
+      width: 0.39063rem;
+      height: 0.39063rem;
+      background: url(../images/arrow.png) no-repeat;
+      background-size: 3.125rem 0.39063rem;
+      z-index: 3;
+      animation: upDown linear 1s infinite; }
+    .swiper-container .swiper-wrapper .page-1 .logo {
+      width: 31.25%;
+      height: 6.39%;
+      margin-left: 9.375%; }
+    .swiper-container .swiper-wrapper .page-1 .team {
+      width: 76.5625%;
+      height: 53%;
+      margin: 3.759% auto; }
+    .swiper-container .swiper-wrapper .page-1 .house {
+      position: absolute;
+      bottom: 0;
+      height: 30%; }
+    .swiper-container .swiper-wrapper .page-2 .face {
+      width: 38.12%;
+      height: 22.92%;
+      background: url(../images/face.png) no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+      margin-top: 10%; }
+    .swiper-container .swiper-wrapper .page-2 .content img {
+      width: 83.043%;
+      height: 50.5%;
+      margin: 0 auto;
+      margin-top: 10%; }
+    .swiper-container .swiper-wrapper .page-2 .intro {
+      margin-top: 10%;
+      background: url(../images/page2-line.png) no-repeat;
+      background-size: cover;
+      width: 94.0625%;
+      height: 27.068%;
+      position: absolute;
+      bottom: 30%;
+      left: 2%; }
+    .swiper-container .swiper-wrapper .page-2 .detail {
+      width: 100%;
+      height: 9.625%;
+      margin-top: 20%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+      .swiper-container .swiper-wrapper .page-2 .detail img {
+        height: 100%;
+        width: 34.62%; }
+    .swiper-container .swiper-wrapper .page-3 .intro {
+      width: 96%;
+      height: 18%;
+      margin-left: 2%;
+      margin-top: 5%;
+      background: url(../images/page3-intro.png) no-repeat;
+      background-size: cover; }
+    .swiper-container .swiper-wrapper .page-3 .phone {
+      width: 100%;
+      height: 75%;
+      background: url(../images/phone.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .swiper-container .swiper-wrapper .page-3 .show {
+      position: relative;
+      width: 100%;
+      height: 75%;
+      bottom: 5%; }
+      .swiper-container .swiper-wrapper .page-3 .show p:nth-of-type(1) {
+        width: 58%;
+        height: 5%;
+        background: url(../images/page3-1.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 3%;
+        bottom: 70%; }
+      .swiper-container .swiper-wrapper .page-3 .show p:nth-of-type(2) {
+        width: 58%;
+        height: 6%;
+        background: url(../images/page3-2.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 8%;
+        bottom: 58%; }
+      .swiper-container .swiper-wrapper .page-3 .show p:nth-of-type(3) {
+        width: 63%;
+        height: 6%;
+        background: url(../images/page3-3.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 3%;
+        bottom: 46%; }
+      .swiper-container .swiper-wrapper .page-3 .show p:nth-of-type(4) {
+        width: 65%;
+        height: 7%;
+        background: url(../images/page3-4.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 8%;
+        bottom: 33%; }
+      .swiper-container .swiper-wrapper .page-3 .show p:nth-of-type(5) {
+        width: 63%;
+        height: 5%;
+        background: url(../images/page3-5.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 3%;
+        bottom: 22%; }
+      .swiper-container .swiper-wrapper .page-3 .show p:nth-of-type(6) {
+        width: 62%;
+        height: 9%;
+        background: url(../images/page3-6.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 8%;
+        bottom: 6%; }
+    .swiper-container .swiper-wrapper .page-4 .if {
+      width: 58%;
+      height: 7%;
+      background: url(../images/page4-if.png) no-repeat;
+      background-size: cover;
+      margin-left: 18%;
+      margin-top: 8%; }
+    .swiper-container .swiper-wrapper .page-4 .man {
+      width: 44%;
+      height: 70%;
+      margin-left: 24%;
+      background: url(../images/page4-man.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      bottom: 3%; }
+    .swiper-container .swiper-wrapper .page-4 p:nth-of-type(1) {
+      width: 48%;
+      height: 3%;
+      background: url(../images/page4-success.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 2%;
+      top: 29%; }
+    .swiper-container .swiper-wrapper .page-4 p:nth-of-type(2) {
+      width: 39%;
+      height: 3%;
+      background: url(../images/page4-source.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 5%;
+      top: 50%; }
+    .swiper-container .swiper-wrapper .page-4 p:nth-of-type(3) {
+      width: 43%;
+      height: 3%;
+      background: url(../images/page4-ability.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 4%;
+      top: 64%; }
+    .swiper-container .swiper-wrapper .page-4 p:nth-of-type(4) {
+      width: 40%;
+      height: 3%;
+      background: url(../images/page4-innovate.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 2%;
+      top: 83%; }
+    .swiper-container .swiper-wrapper .page-4 p:nth-of-type(5) {
+      width: 27%;
+      height: 7%;
+      background: url(../images/page4-love.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 10%;
+      top: 49%; }
+    .swiper-container .swiper-wrapper .page-4 p:nth-of-type(6) {
+      width: 37%;
+      height: 3%;
+      background: url(../images/page4-passion.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 6%;
+      top: 61%; }
+    .swiper-container .swiper-wrapper .page-5 .go {
+      width: 84%;
+      height: 14%;
+      margin-left: 8%;
+      margin-top: 10%;
+      background: url(../images/page5-go.png) no-repeat;
+      background-size: cover; }
+    .swiper-container .swiper-wrapper .page-5 .message {
+      width: 84%;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 5%; }
+      .swiper-container .swiper-wrapper .page-5 .message p {
+        width: 100%;
+        height: 5%;
+        margin-bottom: 3%;
+        background: #fff; }
+        .swiper-container .swiper-wrapper .page-5 .message p input {
+          width: 100%;
+          height: 0.78125rem;
+          font-size: 0.5rem;
+          background: #fff;
+          border: none;
+          outline: none;
+          text-indent: 3%;
+          line-height: 25px; }
+      .swiper-container .swiper-wrapper .page-5 .message p:nth-of-type(3) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.5rem;
+        line-height: 0.84375rem;
+        color: #333; }
+        .swiper-container .swiper-wrapper .page-5 .message p:nth-of-type(3) input {
+          width: 20%;
+          height: 0.5625rem; }
+      .swiper-container .swiper-wrapper .page-5 .message p:last-of-type {
+        background: blue; }
+        .swiper-container .swiper-wrapper .page-5 .message p:last-of-type input {
+          background: blue;
+          color: #fff; }
+    .swiper-container .swiper-wrapper .page-5 .bottom {
+      width: 100%;
+      height: 30%;
+      background: url(../images/page5-bottom.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      bottom: 0; }
+
+@keyframes upDown {
+  from {
+    bottom: 0.3125rem;
+    opacity: 1; }
+  to {
+    bottom: 0.625rem;
+    opacity: 0; } }
+@keyframes cricle {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=index.css.map */
